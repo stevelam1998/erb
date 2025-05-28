@@ -12,7 +12,7 @@
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
-        >
+        > 
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -29,7 +29,7 @@
             </li>
             <li class="nav-item mr-3">
         {% comment %} fix the link later {% endcomment %}
-                <a class="nav-link" href="listings.html">Featured Listings</a>
+                <a class="nav-link" href={% url "listings:listings" %}>Featured Listings</a>
             </li>
           </ul>
 
@@ -44,7 +44,6 @@
         {% comment %} fix the link later {% endcomment %}
                 <a class="nav-link" href="login.html">
                 <i class="fas fa-sign-in-alt"></i>
-
                 Login</a
               >
             </li>
