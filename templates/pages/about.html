@@ -1,6 +1,6 @@
 {% extends "base.html" %} 
 {% load static %}
-{{realtor.photo.url}}%}
+{% load humanize %}
 {% block content %}
     <section id="showcase-inner" class="py-5 text-white">
       <div class="container">
@@ -64,7 +64,7 @@
                 <h5 class="card-title">Seller Of The Month</h5>
                 <h6 class="text-secondary">{{realtor.name}}</h6>
                 <p class="card-text">
-                  {{realtor.description | truncatechars:200}}
+                  {{realtor.descritption | truncatechars:200}}
                 </p>
               </div>
             </div>
